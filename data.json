@@ -1,0 +1,70 @@
+[
+    {
+        "HeaderRecord": {
+            "HeaderRecordIndicator": "H",
+            "SupervisingAgency": "1 ",
+            "InstitutionCode": " 00046000004600000",
+            "RecordDate": "20190328",
+            "ReportType": "CTR",
+            "FormatCode": "1",
+            "SubmissionType": "A"
+        },
+        "DetailRecord": {
+            "DetailRecordIndicator": "",
+            "TransactionDate": 0,
+            "TransactionCode": "",
+            "TransactionReferenceNumber": "",
+            "AccountNumber": "",
+            "OldAccountNumber": "",
+            "TransactionAmount": 0,
+            "TransactionAmountFX": 0,
+            "FxCurrencyCode": "",
+            "PurposeOfTransaction": "",
+            "EffectivityDate": 0,
+            "ExpiryDate": 0,
+            "AmountOfClaim": 0,
+            "NumberOfShares": 0,
+            "NetAssetValue": 0,
+            "Address": {
+                "Address1": "",
+                "Address2": "",
+                "Address3": ""
+            },
+            "CountryCodeOfCorrespondentBank": 0
+        }
+    },
+    {
+        "HeaderRecord": {
+            "HeaderRecordIndicator": "H",
+            "SupervisingAgency": "1 ",
+            "InstitutionCode": " 00046000004600000",
+            "RecordDate": "20190328",
+            "ReportType": "CTR",
+            "FormatCode": "1",
+            "SubmissionType": "A"
+        },
+        "DetailRecord": {
+            "DetailRecordIndicator": "D",
+            "TransactionDate": 20190326115900,
+            "TransactionCode": "KCCPC",
+            "TransactionReferenceNumber": "35628120190326",
+            "AccountNumber": "4622673356135104",
+            "OldAccountNumber": "",
+            "TransactionAmount": 567766.5,
+            "TransactionAmountFX": 0,
+            "FxCurrencyCode": "PHP",
+            "PurposeOfTransaction": "asd",
+            "EffectivityDate": 2132,
+            "ExpiryDate": 231,
+            "AmountOfClaim": 12312,
+            "NumberOfShares": 123,
+            "NetAssetValue": 123,
+            "Address": {
+                "Address1": "Philippines",
+                "Address2": "Makti",
+                "Address3": "city"
+            },
+            "CountryCodeOfCorrespondentBank": 204
+        }
+    }
+]

@@ -1,0 +1,117 @@
+type Name struct {
+    LastName   string
+    FirstName  string
+    MiddleName string
+}
+type Address struct {
+    Address1 string
+    Address2 string
+    Address3 string
+}
+type Report struct {
+    HeaderRecord struct {
+        SupervisingAgency int
+        InstitutionCode   int
+        RecordDate        int
+        ReportType        string
+        FormatCode        int
+        SubmissionType    string
+    }
+    DetailRecord struct {
+        TransactionDate                string
+        TransactionCode                string
+        TransactionReferenceNumber     string
+        AccountNumber                  string
+        OldAccountNumber               string
+        TransactionAmount              float64
+        TransactionAmountFX            float64
+        FxCurrencyCode                 string
+        PurposeOfTransaction           string
+        EffectivityDate                int
+        ExpiryDate                     int
+        AmountOfClaim                  float64
+        NumberOfShares                 int
+        NetAssetValue                  int
+        Address                        Address
+        CountryCodeOfCorrespondentBank int
+    }
+    SubjectData struct {
+        AccountHolder struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            RegistrationDate        int
+            PlaceOfBirth            string
+            Nationality             string
+            IdType                  string
+            IdentificationNumber    string
+            TelephoneNumber         string
+            NatureOfBusiness        string
+        }
+        Benefeciary struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+            RegistrationDate        int
+            PlaceOfBirth            string
+            Nationality             string
+            IdType                  string
+            IdentificationNumber    string
+            TelephoneNumber         string
+            NatureOfBusiness        string
+        }
+        CounterParty struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+        }
+        OtherParticipant struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+        }
+        Issuer struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+        }
+        Transactor struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+        }
+        SubjectOfSuspicion struct {
+            CustomerReferenceNumber string
+            NameFlag                string
+            Name                    Name
+            Address                 Address
+            AccountNumber           string
+            RegistrationDate        int
+            PlaceOfBirth            string
+            Nationality             string
+            idType                  string
+            IdentificationNumber    string
+            TelephoneNumber         string
+            NatureOfBusiness        string
+        }
+    }
+    DetailOfSuspicion struct {
+        Reason    string
+        Narrative string
+    }
+    TrailerRecord struct {
+        PhpAmoungTotal             float64
+        RecordTotalOfBatchToBeSent int
+    }
+}
